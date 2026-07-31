@@ -1,0 +1,170 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@theme inline {
+  --font-sans: 'Plus Jakarta Sans', 'Plus Jakarta Sans Fallback', ui-sans-serif, system-ui;
+  --font-mono: 'JetBrains Mono', 'JetBrains Mono Fallback', ui-monospace;
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+}
+
+:root {
+  color-scheme: light;
+
+  /* neutrals */
+  --background: oklch(0.99 0.005 290);
+  --foreground: oklch(0.24 0.03 285);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.24 0.03 285);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.24 0.03 285);
+  --muted: oklch(0.96 0.012 290);
+  --muted-foreground: oklch(0.52 0.03 287);
+
+  /* brand purple */
+  --primary: oklch(0.52 0.22 295);
+  --primary-foreground: oklch(0.99 0.005 290);
+
+  /* accent blue */
+  --accent: oklch(0.58 0.18 258);
+  --accent-foreground: oklch(0.99 0.005 290);
+
+  --secondary: oklch(0.95 0.02 292);
+  --secondary-foreground: oklch(0.3 0.08 292);
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.9 0.02 290);
+  --input: oklch(0.9 0.02 290);
+  --ring: oklch(0.52 0.22 295);
+
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background-color: color-mix(in oklab, var(--card) 65%, transparent);
+    backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid color-mix(in oklab, var(--primary) 14%, transparent);
+    box-shadow:
+      0 1px 0 0 color-mix(in oklab, white 60%, transparent) inset,
+      0 18px 40px -24px color-mix(in oklab, var(--primary) 45%, transparent);
+  }
+
+  .glass-strong {
+    background-color: color-mix(in oklab, var(--card) 96%, transparent);
+    backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid color-mix(in oklab, var(--primary) 14%, transparent);
+    box-shadow: 0 20px 44px -26px color-mix(in oklab, var(--primary) 50%, transparent);
+  }
+
+  .text-gradient {
+    background-image: linear-gradient(100deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal[data-visible='true'] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .animate-float {
+    animation: float 7s ease-in-out infinite;
+  }
+  .animate-blob {
+    animation: blob 18s ease-in-out infinite;
+  }
+  .animate-marquee {
+    animation: marquee 28s linear infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-float,
+  .animate-blob,
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(6%, -4%) scale(1.08);
+  }
+  66% {
+    transform: translate(-5%, 5%) scale(0.95);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

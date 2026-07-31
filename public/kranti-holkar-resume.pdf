@@ -1,0 +1,58 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1512 >>
+stream
+BT
+/F1 20 Tf 1 0 0 1 60 780 Tm (KRANTI HOLKAR) Tj
+/F1 12 Tf 1 0 0 1 60 752 Tm (Full Stack Developer) Tj
+/F1 12 Tf 1 0 0 1 60 732 Tm () Tj
+/F1 13 Tf 1 0 0 1 60 712 Tm (SKILLS) Tj
+/F1 11 Tf 1 0 0 1 60 691 Tm (Languages: Java, JavaScript, Python) Tj
+/F1 11 Tf 1 0 0 1 60 672 Tm (Frontend: React.js, HTML5, CSS3, Bootstrap) Tj
+/F1 11 Tf 1 0 0 1 60 653 Tm (Backend: Node.js, Express.js) Tj
+/F1 11 Tf 1 0 0 1 60 634 Tm (Databases: MongoDB, MySQL) Tj
+/F1 11 Tf 1 0 0 1 60 615 Tm (Core CS: DSA, OOP, DBMS) Tj
+/F1 11 Tf 1 0 0 1 60 596 Tm (Tools: Git, GitHub, Postman, VS Code) Tj
+/F1 11 Tf 1 0 0 1 60 577 Tm () Tj
+/F1 13 Tf 1 0 0 1 60 558 Tm (EXPERIENCE) Tj
+/F1 11 Tf 1 0 0 1 60 537 Tm (Edunet Foundation - Full Stack Development Intern) Tj
+/F1 11 Tf 1 0 0 1 60 518 Tm (Jan 2026 - Feb 2026) Tj
+/F1 11 Tf 1 0 0 1 60 499 Tm (- Built a full-stack accommodation booking platform) Tj
+/F1 11 Tf 1 0 0 1 60 480 Tm (  inspired by Airbnb with AI-powered smart search.) Tj
+/F1 11 Tf 1 0 0 1 60 461 Tm (- Integrated a conversational AI search assistant for) Tj
+/F1 11 Tf 1 0 0 1 60 442 Tm (  personalized listing recommendations.) Tj
+/F1 11 Tf 1 0 0 1 60 423 Tm (- Deployed and managed the app on Render.) Tj
+/F1 11 Tf 1 0 0 1 60 404 Tm () Tj
+/F1 13 Tf 1 0 0 1 60 385 Tm (PROJECTS) Tj
+/F1 11 Tf 1 0 0 1 60 364 Tm (- Criminal Record Management System) Tj
+/F1 11 Tf 1 0 0 1 60 345 Tm (- Spotify Clone) Tj
+/F1 11 Tf 1 0 0 1 60 326 Tm () Tj
+/F1 9 Tf 1 0 0 1 60 307 Tm (Placeholder resume - replace public/kranti-holkar-resume.pdf) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001805 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1875
+%%EOF
