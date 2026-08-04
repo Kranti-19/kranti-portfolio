@@ -189,7 +189,6 @@ Resume can be downloaded directly from the portfolio website.
 ## 📫 Connect With Me
 
 - GitHub: https://github.com/Kranti-19
-- LinkedIn: https://linkedin.com/in/your-linkedin
 - Email: krantimholkar@gmail.com
 
 ---
